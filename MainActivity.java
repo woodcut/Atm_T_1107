@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch ((int) id){
             case R.drawable.func_balance:
+                startActivity(new Intent(this, PictureActivity.class));
                 break;
             case R.drawable.func_history:
                 startActivity(new Intent(this, TransActivity.class));
